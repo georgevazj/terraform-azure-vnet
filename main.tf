@@ -20,11 +20,6 @@ resource "azurerm_virtual_network" "vnet" {
   address_space = var.vnet_address_space
   dns_servers = var.dns_servers
 
-  ddos_protection_plan {
-    id = var.ddos_id
-    enable = true
-  }
-
   tags = {
     environment = var.environment_tag
   }
