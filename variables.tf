@@ -11,11 +11,6 @@ variable "location" {
 }
 
 # Network resources
-variable "ddos_id" {
-  type = string
-  description = "(Required) DDOS protection plan id"
-}
-
 variable "vnet_name" {
   type = string
   description = "(Required) Virtual network name"
